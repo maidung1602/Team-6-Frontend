@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*      Start css nav    */
+
+#nav {
+    height: 78px;
+    padding: 16px 12px;
+}
+
+#logo {
+    width: 40px;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+#logo-text {
+    color: #1c1e2e;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/*      End css nav    */
+
+/*      Start css banner    */
+
+#banner {
+    display: flex;
+    margin: 0 8%;
+    margin-bottom: 60px;
+}
+
+#banner-text {
+    padding: 220px 12px;
+    margin-right: 80px;
+}
+
+#banner #cover {
+    width: 540px;
+}
+
+.head-line {
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: #1c1e2e;
+}
+
+.subhead {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #4c527d;
+}
+
+.learn-btn {
+    height: 54px;
+    width: 165px;
+}
+
+.learn-btn a {
+    display: block;
+    background: white;
+    border: 2px solid #ed6524;
+    color: #ed6524;
+    line-height: 52px;
+    font-weight: bold;
+    border-radius: 28px;
+    text-align: center;
+}
+
+.learn-btn a:hover{
+    cursor: pointer;
+    background: #ed6524;
+    border: 2px solid #ed6524;
+    color: white;
+    transition: all 0.4;
+}
+
+/*      End css banner   */
+
+/*      Start css get-from-book    */
+#get-from-book {
+    background-image: linear-gradient(to bottom, #f6f8fc 0%, #fff 70%);
+    padding: 48px 0;
+    text-align: center;
+}
+
+#get-from-book .container {
+    padding: 48px 12px;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#get-from-book .subhead {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 24px;
+}
+
+.container-list {
+    display: flex;
+}
+
+.item {
+    padding: 28px;
+    font-size: 16px;
+}
+
+.item i{
+    font-size: 48px;
+    color: #ed6524;
+}
+
+.item-heading {
+    font-size: 18px;
+    color: #1c1e2e;
+    margin-bottom: 16px;
+}
+
+.item-desc {
+    color: #4c527d;
+}
+
+
+/*      End css get-from-book    */
