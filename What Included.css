@@ -1,3 +1,4 @@
+
 #what-included-heading 
 {
     text-align: center;
@@ -7,7 +8,7 @@
 
 #what-picture
 {
-    width: 350px;
+    width: 400px;
     margin-left: 300px;
 }
 
@@ -15,6 +16,20 @@
 {
     margin-right: 400px;
     line-height: 50px;
+    color:lightslategrey;
+}
+
+.btn
+{
+    display: inline block;
+    text-decoration: none;
+    background-color: orange;
+    border: 5px;
+    outline: none;
+    padding: 12px 48px;
+    border-radius: 50px;
+    margin-top: 50px;
+    color: aliceblue;
 }
 
 article {
