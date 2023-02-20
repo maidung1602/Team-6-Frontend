@@ -1,0 +1,25 @@
+#what-included-heading 
+{
+    text-align: center;
+    color: black;
+    margin-bottom: 70px;
+}
+
+#what-picture
+{
+    width: 350px;
+    margin-left: 300px;
+}
+
+.what-list
+{
+    margin-right: 400px;
+    line-height: 50px;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+}
+
+
