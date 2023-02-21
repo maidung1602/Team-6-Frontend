@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+.head-line {
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: #1c1e2e;
+    font-weight: bold;
+}
+
+.subhead {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #4c527d;
+}
+
+
+/*      Start css nav    */
+
+#nav {
+    height: 78px;
+    padding: 16px 12px;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 40px;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+#logo-text {
+    color: #1c1e2e;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    padding: 48px 12px;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*      End css nav    */
+
+/*      Start css banner    */
+
+#banner {
+    display: flex;
+    margin: 0 8%;
+    margin-bottom: 60px;
+}
+
+#banner-text {
+    padding: 220px 12px;
+    margin-right: 80px;
+}
+
+#banner #cover {
+    width: 540px;
+}
+
+.learn-btn {
+    height: 54px;
+    width: 165px;
+}
+
+.learn-btn a {
+    text-decoration: none;
+    display: block;
+    background: white;
+    border: 2px solid #ed6524;
+    color: #ed6524;
+    line-height: 52px;
+    font-weight: bold;
+    border-radius: 28px;
+    text-align: center;
+}
+
+.learn-btn a:hover{
+    background: #ed6524;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+/*      End css banner   */
+
+/*      Start css get-from-book    */
+#get-from-book {
+    background-image: linear-gradient(to bottom, #f6f8fc 0%, #fff 70%);
+    padding: 48px 0;
+    text-align: center;
+}
+
+
+#get-from-book .subhead {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 32px;
+}
+
+#get-from-book .container-list {
+    display: flex;
+}
+
+#get-from-book .item {
+    padding: 28px;
+}
+
+#get-from-book .item i{
+    font-size: 48px;
+    color: #ed6524;
+}
+
+#get-from-book .item-heading {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1c1e2e;
+    margin-bottom: 16px;
+}
+
+#get-from-book .item-desc {
+    color: #4c527d;
+}
+
+
+/*      End css get-from-book    */
+
+/*      Start css What's included    */
+.what-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 32px;
+}
+
+#what-included-heading 
+{
+    text-align: center;
+    color: black;
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+#what-picture
+{
+    width: 400px;
+    margin-left: 300px;
+}
+
+.what-list
+{
+    font-size: 18px;
+    list-style-type: none;
+    margin-right: 400px;
+    line-height: 48px;
+    color: #4c527d;
+}
+
+.what-list i
+{
+    padding-right: 8px;
+}
+
+.what-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    height: 52px;
+    width: 193px;
+}
+
+.what-btn a {
+    text-decoration: none;
+    display: block;
+    background: #ed6524;
+    border: 2px solid #ed6524;
+    color: white;
+    line-height: 52px;
+    font-weight: bold;
+    border-radius: 28px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.what-btn a:hover{
+    color: white;
+    background-color: #e55713;
+    transition-duration: 0.4s;
+}
+
+
+/*      End css What's included    */
+
+
+/*      Start css who-this-book-for    */
+
+#who-is-for  {
+    padding-top: 24px;
+    text-align: center;
+}
+
+#who-is-for .subhead {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    padding-top: 12px;
+}
+
+#who-is-for .container-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#who-is-for .item {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+}
+
+#who-is-for .item i{
+   padding-right: 8px;
+    color: #7FCDB8;
+}
+
+#who-is-for .item-heading {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1c1e2e;
+    margin-bottom: 16px;
+}
+
+#who-is-for .item-desc {
+    padding-left: 24px;
+    color: #4c527d;
+}
+
+/*      End css who-this-book-for    */
+
+
+
+/*      Start css book-review    */
+.item-inner {
+    font-style: italic;
+    color: #4c527d;
+    background-color: #f6f8fc;
+    position: relative;
+}
+
+.bookreview .head-line {
+    margin-bottom: 8px;
+}
+
+.bookreview i {
+    position: absolute;
+    left: 50%;
+    top: -18px;
+    margin-left: -18px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #f5a782;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 6px;
+}
+/*      End css book-review    */
+
+/*   Start css  about */
+#about {
+    background-color: #ed6524;
+    color: white;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#about img {
+    width: 150px;
+    margin-bottom: 48px;
+}
+
+#about h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+#about p {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    text-align: left;
+}
+
+/*   End css about   */
+
+
+
+/*   Start css  footer   */
+
+#footer {
+    text-align: center;
+    padding: 48px 0;
+}
+
+#footer i {
+    font-size: 16px;
+    color: #000;
+    width: 20px;
+}
+
+#des {
+    padding-top: 4px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#name {
+    color: rgba(186, 36, 37, 0.7);
+}
+
+#name:hover {
+    cursor: pointer;
+    color: #ba2425;
+}
+
+/*   End css  footer   */
+
+
