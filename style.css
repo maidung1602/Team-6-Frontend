@@ -1,13 +1,13 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
-    font-family: sans-serif;
 }
 
 .head-line {
@@ -23,32 +23,6 @@ html {
     color: #4c527d;
 }
 
-
-/*      Start css nav    */
-
-#nav {
-    height: 78px;
-    padding: 16px 12px;
-}
-
-#nav a {
-    text-decoration: none;
-}
-
-#logo {
-    width: 40px;
-    display: inline-block;
-    margin-right: 6px;
-    vertical-align: middle;
-}
-
-#logo-text {
-    color: #1c1e2e;
-    font-size: 24px;
-    font-family: sans-serif;
-    font-weight: bold;
-}
-
 .container {
     padding: 48px 12px;
     max-width: 1320px;
@@ -56,36 +30,99 @@ html {
     margin-right: auto;
 }
 
-/*      End css nav    */
+
+/*      Start css header   */
+
+#header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+#nav {
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 60px;
+    color: #1c1e2e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#logo {
+    width: 60px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 135px;
+    padding-top: 2px;
+}
+
+#nav li:hover {
+    background-color: #f2f2f3;
+    cursor: pointer;
+}
+
+.user {
+    position: absolute;
+    right: 120px;
+    display: inline-block;
+    padding: 14px 12px;
+    height: 60px;
+}
+
+/*      End css header   */
 
 /*      Start css banner    */
 
 #banner {
     display: flex;
-    margin: 0 8%;
-    margin-bottom: 60px;
+    padding: 60px 8% 64px;
+    width: 100%;
 }
 
 #banner-text {
     padding: 220px 12px;
-    margin-right: 80px;
+    margin-right: 96px;
+}
+
+#banner #banner-img {
+    width: 560px;
 }
 
 #banner #cover {
-    width: 540px;
+    width: 800px;
+    margin-left: -96px;
+}
+
+#banner .head-line {
+    font-size: 48px;
+    line-height: 56px;
 }
 
 .learn-btn {
     height: 54px;
     width: 165px;
+    margin-left: 20px;
 }
 
 .learn-btn a {
     text-decoration: none;
     display: block;
     background: white;
-    border: 2px solid #ed6524;
-    color: #ed6524;
+    border: 2px solid#C50000;
+    color: #C50000;
     line-height: 52px;
     font-weight: bold;
     border-radius: 28px;
@@ -93,7 +130,7 @@ html {
 }
 
 .learn-btn a:hover{
-    background: #ed6524;
+    background:#C50000;
     color: white;
     transition-duration: 0.4s;
 }
@@ -102,11 +139,15 @@ html {
 
 /*      Start css get-from-book    */
 #get-from-book {
+    width: 100%;
     background-image: linear-gradient(to bottom, #f6f8fc 0%, #fff 70%);
     padding: 48px 0;
     text-align: center;
 }
 
+#get-from-book .head-line {
+    margin-bottom: 40px;
+}
 
 #get-from-book .subhead {
     max-width: 760px;
@@ -121,17 +162,19 @@ html {
 
 #get-from-book .item {
     padding: 28px;
+    width: 33.3333%;
 }
 
 #get-from-book .item i{
     font-size: 48px;
-    color: #ed6524;
+    color: #C50000;
 }
 
 #get-from-book .item-heading {
     font-weight: bold;
     font-size: 18px;
     color: #1c1e2e;
+    margin-top: 8px;
     margin-bottom: 16px;
 }
 
@@ -165,6 +208,7 @@ html {
 
 .what-list
 {
+    padding-top: 40px;
     font-size: 18px;
     list-style-type: none;
     margin-right: 400px;
@@ -178,8 +222,7 @@ html {
 }
 
 .what-btn {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -20px;
     margin-top: 28px;
     height: 52px;
     width: 193px;
@@ -188,8 +231,8 @@ html {
 .what-btn a {
     text-decoration: none;
     display: block;
-    background: #ed6524;
-    border: 2px solid #ed6524;
+    background: #C50000;
+    border: 2px solid #C50000;
     color: white;
     line-height: 52px;
     font-weight: bold;
@@ -200,7 +243,7 @@ html {
 
 .what-btn a:hover{
     color: white;
-    background-color: #e55713;
+    background-color: #ef0606;
     transition-duration: 0.4s;
 }
 
@@ -277,7 +320,7 @@ html {
     display: inline-block;
     width: 36px;
     height: 36px;
-    background: #f5a782;
+    background: rgba(197, 0, 0, 0.6);
     color: #fff;
     text-align: center;
     border-radius: 50%;
@@ -287,7 +330,7 @@ html {
 
 /*   Start css  about */
 #about {
-    background-color: #ed6524;
+    background-color: #C50000;
     color: white;
     padding-bottom: 60px;
     text-align: center;
