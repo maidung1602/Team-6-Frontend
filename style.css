@@ -25,7 +25,8 @@ html {
 
 .container {
     padding: 48px 12px;
-    max-width: 1320px;
+    width: 1320px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -38,6 +39,7 @@ html {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
     background-color: white;
 }
 
@@ -62,7 +64,7 @@ html {
 }
 
 #logo {
-    width: 60px;
+    width: 64px;
     display: inline-block;
     margin-right: 20px;
     margin-left: 135px;
@@ -90,6 +92,7 @@ html {
     display: flex;
     padding: 60px 8% 64px;
     width: 100%;
+    /* flex-wrap: wrap; */
 }
 
 #banner-text {
@@ -97,13 +100,9 @@ html {
     margin-right: 96px;
 }
 
-#banner #banner-img {
-    width: 560px;
-}
-
 #banner #cover {
-    width: 800px;
-    margin-left: -96px;
+    padding-top: 56px;
+    width: 560px;
 }
 
 #banner .head-line {
@@ -122,7 +121,8 @@ html {
     display: block;
     background: white;
     border: 2px solid#C50000;
-    color: #C50000;
+    background:#C50000;
+    color: white;
     line-height: 52px;
     font-weight: bold;
     border-radius: 28px;
@@ -130,12 +130,14 @@ html {
 }
 
 .learn-btn a:hover{
-    background:#C50000;
-    color: white;
+    background-color: #a72222;
+    color: #fff;
     transition-duration: 0.4s;
 }
 
 /*      End css banner   */
+
+
 
 /*      Start css get-from-book    */
 #get-from-book {
@@ -158,11 +160,13 @@ html {
 
 #get-from-book .container-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #get-from-book .item {
     padding: 28px;
-    width: 33.3333%;
+    width: 420px; 
 }
 
 #get-from-book .item i{
@@ -188,36 +192,35 @@ html {
 /*      Start css What's included    */
 .what-container {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 573px;
+    margin-left: auto;
+    margin-right: auto; */
     padding-bottom: 32px;
 }
 
-#what-included-heading 
-{
+#what-included-heading {
     text-align: center;
     color: black;
     margin-bottom: 70px;
     font-weight: bold;
 }
 
-#what-picture
-{
-    width: 400px;
-    margin-left: 300px;
+#what-picture {
+    width: 320px;
 }
 
-.what-list
-{
+.what-list {
     padding-top: 40px;
+    margin-left: 48px;
     font-size: 18px;
     list-style-type: none;
-    margin-right: 400px;
     line-height: 48px;
     color: #4c527d;
 }
 
-.what-list i
-{
+.what-list i {
     padding-right: 8px;
 }
 

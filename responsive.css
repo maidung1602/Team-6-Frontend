@@ -1,0 +1,77 @@
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    #logo {
+        margin-left: 80px;
+    }
+
+    #banner-text {
+        margin-right: 40px;
+        padding: 84px 12px 40px;
+    }
+
+    #banner .head-line {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    #banner .subhead {
+        font-size: 20px;
+    }
+
+    #banner #cover {
+        padding-top: 96px;
+        width: 300px;
+    }
+
+    .user {
+        right: 60px;
+    }
+
+    #get-from-book .item {
+        padding: 28px;
+        width: 348px; 
+    }
+
+}
+/* Mobile */
+@media (max-width: 740px) {
+    
+    #nav li {
+        padding: 0 4px;
+    }
+
+    #logo {
+        margin-left: 12px;
+        margin-right: 4px;
+    }
+
+    .user {
+        right: 0;
+        padding: 16px;
+    }
+
+    #banner-text {
+        margin: 0;
+        padding: 132px 12px 64px;
+    }
+
+    #banner .head-line {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    #banner .subhead {
+        font-size: 16px;
+    }
+   
+    #banner-img {
+        display: none;
+    }
+
+    .what-list {
+        margin-left: 0;
+    }
+
+}
