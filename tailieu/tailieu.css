@@ -1,81 +1,3 @@
-
-/*      Start css content   */
-
-.btn{
-    background-color: #c50000 !important;
-    color: white !important;
-}
-
-.group-btn {
-    justify-content: center;
-    align-items: center;
-}
-
-.btn:focus {
-    box-shadow: 0 0 0 4px rgba(197, 0, 0, 0.2) !important;
-}
-
-.btn-custom {
-    width: 70px;
-    height: 70px; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 10px 10px 5px rgba(241, 49, 49, 0.238);
-}
-
-.custom-1 {
-    margin-right: 30px;
-}
-  
-.custom-2 {
-    margin-left: 20px;
-}
-  
-.custom-3 {
-    margin-left: 50px;
-}
-  
-.custom-4 {
-    margin-right: 30px;
-}
-  
-.custom-5 {
-    margin-right: 110px;
-}
-
-.content-header{
-    background-color: #c50000;
-    color: white;
-    margin: 20px 0;
-    border-radius: 20px;
-    height: 92px;
-    padding: 16px 0;
-}
-
-#content {
-    position: relative;
-    background-color: #f8f9fa;
-    border-radius: 28px;
-    margin: 96px auto 40px;
-    max-width: 560px;
-    padding: 32px 48px;
-}
-
-.text {
-    margin-bottom: 4px;
-}
-
-.list-group {
-    list-style-type: none;
-}
-
-.list-group li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-/*      End css content   */
-
 /* Reset */
 * {
     margin: 0;
@@ -148,6 +70,22 @@ html {
 
 /*      End css header   */
 
+/*     Start css content */
+#content {
+    text-align: center;
+    max-width: 560px;
+    margin: 72px auto 80px;
+}
+
+.item h2 {
+    margin: 48px 0 32px;
+}
+
+.item img {
+    width: 480px;
+}
+
+/*     End css content */
 
 /*   Start css  footer   */
 
