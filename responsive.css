@@ -5,6 +5,23 @@
     #logo {
         margin-left: 80px;
     }
+    .user {
+        right: 60px;
+    }
+
+    #header {
+        height: 60px;
+        width: 100%;
+    }
+    
+    #nav {
+        display: none;
+    }
+    
+    #banner {
+        padding-top: 80px;
+        padding-bottom: 84px;
+    }
 
     #banner-text {
         margin-right: 40px;
@@ -25,10 +42,6 @@
         width: 300px;
     }
 
-    .user {
-        right: 60px;
-    }
-
     #get-from-book .item {
         padding: 28px;
         width: 348px; 
@@ -38,18 +51,31 @@
 /* Mobile */
 @media (max-width: 740px) {
     
+    #header {   
+        height: 52px;
+    }
+
     #nav li {
         padding: 0 4px;
     }
 
+    #nav li a {
+        display: inline-block;
+        padding: 0 8px;
+        font-size: 16px;
+        line-height: 52px;
+    }
+
     #logo {
+        width: 52px;
         margin-left: 12px;
-        margin-right: 4px;
+        margin-right: 8px;
     }
 
     .user {
         right: 0;
         padding: 16px;
+        height: 56px;
     }
 
     #banner-text {
