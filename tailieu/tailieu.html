@@ -12,7 +12,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Learn Japanese</title>
+    <script>
+        function hide(sw) {
+            if (sw == 0) {
+                document.getElementById('kata').style.display = 'block';
+                document.getElementById('hira').style.display = 'none';
+            } else {
+                document.getElementById('hira').style.display = 'block';
+                document.getElementById('kata').style.display = 'none';
+            }
+        }
+    </script>
 </head>
+
 
 <body>
      <!-- Start header -->
@@ -30,23 +42,40 @@
     <!-- End header -->
 
     <!--Start body-->
+    
     <div id="content">
-        <div class="container">
-            <div class="item">
-                <h2>Bảng Hiragana</h2>
-                <div><img src="../img/bang-chu-cai-tieng-nhat-hiragana.png" alt="Hiragana" ></div>
+        <p id="btn-container">
+            <button id="hiragana" type="button" onclick="hide(1)">Hiragana</button>
+            <button type="button" onclick="hide(0)">Katakana</button>
+        </p>
+        <div class="content-body">
+            <div class="container" id="hira">
+                <div class="item">
+                    <h2>Bảng Hiragana</h2>
+                    <div><img src="../img/Screenshot 2023-02-27 141354.png" alt="Hiragana" ></div>
+                </div>
+                <div class="item bienam">
+                    <h2>Âm đục và bán đục</h2>
+                    <div><img src="../img/bienam-hiragana.jpg" alt="Bienam" ></div>
+                </div>
+                <div class="item">
+                    <h2>Âm ghép</h2>
+                    <div><img src="../img/2-bang-chu-cai-tieng-nhat.png" alt="Amghep" ></div>
+                </div>
             </div>
-            <div class="item">
-                <h2>Bảng Katakana</h2>
-                <div><img src="../img/trungtamnhatngu.edu.vn_30.jpg" alt="Katakana" ></div>
-            </div>
-            <div class="item">
-                <h2>Âm đục và bán đục</h2>
-                <div><img src="../img/bienam-hiragana.jpg" alt="Bienam" ></div>
-            </div>
-            <div class="item">
-                <h2>Âm ghép</h2>
-                <div><img src="../img/2-bang-chu-cai-tieng-nhat.png" alt="Amghep" ></div>
+            <div class="container" id="kata">
+                <div class="item">
+                    <h2>Bảng Katakana</h2>
+                    <div><img src="../img/trungtamnhatngu.edu.vn_30.jpg" alt="Katakana" ></div>
+                </div>
+                <div class="item">
+                    <h2>Âm đục và bán đục</h2>
+                    <div><img src="../img/troc-am-1-500x372.jpg" alt="Bienam" ></div>
+                </div>
+                <div class="item">
+                    <h2>Âm ghép</h2>
+                    <div><img src="../img/am-ghep-xuc-am-am_-noi-trong-tieng-nhat_grande.webp" alt="Amghep" ></div>
+                </div>
             </div>
         </div>
     </div>

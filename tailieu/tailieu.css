@@ -73,8 +73,37 @@ html {
 /*     Start css content */
 #content {
     text-align: center;
-    max-width: 560px;
+    max-width: 1320px;
     margin: 72px auto 80px;
+}
+
+.content-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn-container {
+    display: none;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 0 12px !important;
+    border: none;
+}
+
+button:hover {
+    color: white;
+    background-color: #c50000;
+}
+
+button:focus {
+    color: white;
+    background-color: #c50000;
+}
+
+.bienam {
+    margin-top: 120px;
 }
 
 .item h2 {

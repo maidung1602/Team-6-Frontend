@@ -1,4 +1,12 @@
+@media (min-width: 1024px) {
+    #btn-container {
+        display: none;
+    }
 
+    #kata, #hira {
+        display: block;
+    } 
+}
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
 
@@ -15,7 +23,24 @@
         padding-bottom: 84px;
     }
 
+    #content img {
+        width: 360px;
+   }
+
+   .bienam {
+    margin-top: 100px;
+   }
+
+   #btn-container {
+    display: none;
+   }
+
+   #kata, #hira {
+    display: block;
+    } 
 }
+
+    
 /* Mobile */
 @media (max-width: 740px) {
     
@@ -49,5 +74,20 @@
     #content img {
         width: 360px;
    }
+   #content {
+        margin-top: 92px;
+   }
+
+   .item h2 {
+        margin: 16px 0 16px;
+   }
+
+    #btn-container {
+        display: block;
+    }
+
+    #kata {
+        display: none;
+    } 
 
 }
