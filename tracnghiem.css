@@ -1,0 +1,144 @@
+.De-bai{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.Choice {
+    justify-content: space-evenly;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 110px;
+    justify-content: center;
+}
+
+.btn1 {
+    padding: 100px;
+    background-color: white;
+    border-radius: 50px;
+    border-color: rgb(190, 190, 190);
+    margin: 0px 20px;
+    cursor: pointer;
+    text-decoration-style: solid;
+    background-color:white;
+    color: black;
+    font-size: 50px;
+    display: inline-flex;
+    width: 10%;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btn1:active {
+    background-color: rgb(190, 190, 190);
+    color: white;
+}
+
+.btn1:focus {
+    background-color: rgb(28,175,246);
+    color: rgb(0, 0, 0);
+}
+
+#ftbtn1 {
+    margin-top: 10px;
+    margin-left: 100px;
+    text-decoration: none;
+    display: inline-flex;
+    border-color: gray;
+    background: gray;
+    border-radius: 28px;
+    text-align: center;
+    font-size: 19px;
+    line-height: 52px;
+    cursor: pointer;
+    position: relative;
+    border-width: 2px 2px 4px;
+    padding: 10px;
+    width: 10%;
+    justify-content: center;
+}
+
+#ftbtn2 {
+    margin-left: 900px;
+    text-decoration: none;
+    display: inline-flex;
+    border-radius: 28px;
+    text-align: center;
+    font-size: 19px;
+    border-color: gray;
+    background:green;
+    line-height: 52px;
+    cursor: pointer;
+    position: relative;
+    border-width: 2px 2px 4px;
+    padding: 10px;
+    width: 10%;
+    justify-content: center;
+}
+
+hr {
+    margin-top: 120px;
+    width: 100%;
+}
+
+.btnx {
+    margin-left: 150px;
+    margin-top: 29px;
+    cursor: pointer;
+    justify-content: center;
+    border: none;
+    background-color: white;
+}
+
+.progress{
+    width: 80%;
+    margin-left: 200px;
+    margin-top: -20px;
+}
+.alert {
+    display: grid;
+    position: relative;
+    text-align: initial;
+    align-items: center;
+}
+
+
+#alrtbtn1 {
+    margin-top: -100px;
+    margin-left: 1000px;
+    text-decoration: none;
+    display: inline-flex;
+    border-color: gray;
+    background: rgb(255, 255, 255);
+    border-radius: 28px;
+    text-align: initial;
+    color: gray;
+    font-size: 19px;
+    line-height: 52px;
+    cursor: pointer;
+    position: relative;
+    border-width: 2px 2px 4px;
+    padding: 10px;
+    width: 10%;
+    justify-content: center;
+}
+
+#alrtbtn2 {
+    margin-top: -100px;
+    margin-left: 1200px;
+    text-decoration: none;
+    display: inline-flex;
+    border-radius: 28px;
+    text-align: initial;
+    color: white;
+    font-size: 19px;
+    border-color: gray;
+    background:rgb(65, 158, 220);
+    line-height: 52px;
+    cursor: pointer;
+    position: relative;
+    border-width: 2px 2px 4px;
+    padding: 10px;
+    width: 10%;
+    justify-content: center;
+}
