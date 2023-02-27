@@ -46,9 +46,18 @@
         height: 56px;
     }
 
+    .content-container{
+        background-color: white;
+    }
+
     #content {
         background-color: white;
-        margin-top: 34px;
+        margin-top: 4px;
+    }
+
+    .alert {
+        margin: 0 16px;
+        height: 210px;
     }
 
 }

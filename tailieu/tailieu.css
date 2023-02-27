@@ -51,8 +51,8 @@ html {
     padding-top: 2px;
 }
 
-#nav li:hover {
-    background-color: #f8f9fa;
+#nav li a:hover {
+    background-color: #f2f2f2;
     cursor: pointer;
 }
 
@@ -65,7 +65,7 @@ html {
 }
 
 #this {
-    background-color: #f8f9fa;
+    background-color: #f2f2f2;
 }
 
 /*      End css header   */
@@ -73,7 +73,7 @@ html {
 /*     Start css content */
 #content {
     text-align: center;
-    max-width: 1320px;
+    max-width: 1120px;
     margin: 72px auto 80px;
 }
 
@@ -92,14 +92,14 @@ button {
     border: none;
 }
 
-button:hover {
+button:hover, #hiragana  {
     color: white;
     background-color: #c50000;
 }
 
 button:focus {
-    color: white;
-    background-color: #c50000;
+    color: white !important;
+    background-color: #c50000 !important;
 }
 
 .bienam {
@@ -111,8 +111,9 @@ button:focus {
 }
 
 .item img {
-    width: 480px;
+    width: 420px;
 }
+
 
 /*     End css content */
 

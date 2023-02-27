@@ -1,0 +1,41 @@
+*   {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#de-bai {
+    margin: 100px auto 80px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#item-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+#left-items {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#right-items {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.items {
+    border-radius: 15px;
+    padding: 4%;
+    margin: 5px;
+    font-size: 19px;
+}
+
+.match-id {
+    
+}
