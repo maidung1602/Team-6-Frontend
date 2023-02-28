@@ -163,20 +163,20 @@
       </div>
 
       <div class="de-bai">
-         <h1>Select the correct character(s) for "na"</h1>
+         <h2>Select the correct character(s) for "na"</h2>
       </div>
 
       <div class="choice">
-         <button class="btn1">
+         <button class="btn1" value="0">
             One
          </button>
-         <button class="btn1">
+         <button class="btn1" value="1">
             Two
          </button>
-         <button class="btn1">
+         <button class="btn1" value="0">
             Three
          </button>
-         <button class="btn1">
+         <button class="btn1" value="0">
             Four
          </button>
       </div>
@@ -184,19 +184,35 @@
    <hr>
    
       <div class="mul-footer">
-         <button id="ftbtn">
-            Next
-         </button>
+         <button id="ftbtn" disabled>Check</button>
       </div>
 
       <div class="thong-bao-thoat">
          <div class="alert" role="alert">
-            <h2 class="alert-heading">Are you sure you want to quit?</h2>
+            <h3 class="alert-heading">Are you sure you want to quit?</h3>
             <p>All the progress in this lesson will be lost</p>
             <button id="alrtbtn1">STAY</button>
             <button id="alrtbtn2">QUIT</button>
          </div>
       </div>
+
+      <div class="correct">
+         <div class="correct-alert">
+            <i class="fa fa-check-circle-o"></i>
+            <span id="correct-text">Excellent!</span>
+            <button class="nextbtn green">Continue</button>
+         </div>
+      </div>
+
+      <div class="wrong">
+         <div class="wrong-alert">
+            <i class="fa fa-close"></i>
+            <span id="wrong-text">Correct Solution: <br> <span id = "key">n</span></span>
+            <button class="nextbtn red">Continue</button>
+         </div>
+      </div>
+
+
   
    </div>
 <!-- End multiple choice -->
@@ -208,29 +224,75 @@
    const close = document.querySelector('#alrtbtn2')
    const stay = document.querySelector('#alrtbtn1')
    const alert = document.querySelector('.thong-bao-thoat')
+   const choices = document.querySelectorAll('.btn1')
+   const check = document.querySelector('#ftbtn')
 
+
+   // mở multiple choice
    function openChoice() {
       multiple.classList.add('open')
    }
    for (const openBtn of openBtns) {
       openBtn.addEventListener('click', openChoice)
    }
-
+   // đóng multiple choice + mở cửa số xác nhận đóng
    function closeChoice() {
       alert.classList.add('open')  
    }
    multipleClose.addEventListener('click', closeChoice);
 
-  
+   // xác nhận đóng
    function closeAlert() {
+      alert.classList.remove('open')
       multiple.classList.remove('open')
    }
    close.addEventListener('click', closeAlert)
-
+   // xác nhận ở lại
    function stayAlert() {
       alert.classList.remove('open')
    }
    stay.addEventListener('click', stayAlert)
+   
+   // các thao tác với nút check
+   function enableBtn() {
+      document.getElementById("ftbtn").disabled = false
+   }
+   
+   for (const choice of choices) {
+      choice.addEventListener('click', enableBtn)
+      choice.addEventListener('click', function(){
+         value = choice.value
+         console.log(value)
+         if (value==1) {
+            check.addEventListener('click', alertCorrect)}
+         else {
+            check.addEventListener('click', alertWrong)}
+         check.addEventListener('click', disableBtn)
+         })
+   }
+
+   function disableBtn() {
+      document.getElementById("ftbtn").disabled = true
+   }
+   function alertCorrect() {
+      document.querySelector('.correct').classList.add('open')
+   }
+   function alertWrong() {
+      document.querySelector('.wrong').classList.add('open')
+   }
+
+   // đóng thông báo đúng   
+   function closeCorrectAlert() {
+      document.querySelector('.correct').classList.remove('open')
+   }
+   document.querySelector('.green').addEventListener('click', closeCorrectAlert)
+   // đóng thông báo sai  
+   function closeWrongAlert() {
+      document.querySelector('.wrong').classList.remove('open')
+   }
+   document.querySelector('.red').addEventListener('click', closeWrongAlert)
+
+
 
    
 </script>
