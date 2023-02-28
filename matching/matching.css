@@ -30,6 +30,7 @@
 }
 
 .items {
+    cursor: pointer;
     border-radius: 15px;
     padding: 4%;
     margin: 5px;
@@ -37,6 +38,14 @@
 }
 
 .match-id {
-    
+    color: rgb(163, 163, 163);
+    display: flex;
+    position: absolute;
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 7px;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
