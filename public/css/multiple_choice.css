@@ -54,13 +54,17 @@
   text-align: center;
 }
 
+/* .score{
+  margin-left: 40px;
+  margin-right: 40px;
+} */
+
 .choice {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 72px;
-  margin-bottom: 108px;
   flex-wrap: wrap;
+  margin: 72px 16px 108px;
 }
 
 .btn1 {
@@ -257,8 +261,10 @@ html {
 
 #hud {
   color: #d34747;
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+  display: block;
+  /* display: flex;
+  justify-content: space-around; */
 }
 
 .hud-prefix {
@@ -271,20 +277,21 @@ html {
 .hud-prefix-question {
   text-align: bottom;
   margin-top: -0.5rem;
-  margin-left: 576px;
   font-size: 1.5rem;
 }
+
 .hud-main-text {
   margin-right: 3rem;
   text-align: center;
 }
 
 #progressBar {
-  width: 40rem;
+  width: 40%;
   height: 1.2rem;
   border: 2px solid #e97478;
-  margin-left: 332px;
   margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #progressBarFull {
@@ -292,6 +299,12 @@ html {
   background-color: #f45009;
   width: 0%;
   
+}
+
+.score {
+  position: absolute;
+  right: 8%;
+  top: 52px;
 }
 
 .choice-container {
