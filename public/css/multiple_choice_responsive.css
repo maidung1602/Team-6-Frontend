@@ -1,0 +1,164 @@
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .btnx {
+        margin-left: 20px;
+    }
+
+    .progress{
+        width: 70%;
+        margin-left: 132px;
+    }
+
+    .de-bai{
+        margin-top: 320px;
+    }
+
+    .choice {
+        margin-top: 120px;
+        margin-bottom: 280px;
+    }
+
+    #ftbtn {
+        width: 120px;
+        margin-left: 600px;
+        margin-top: 32px;
+        padding: 8px;
+    }
+
+    .correct-alert {
+        padding: 40px 100px !important;
+    }
+
+    .wrong-alert {
+        padding: 40px 100px !important;
+    }
+
+    .nextbtn {
+        right: 120px;
+        width: 20%;
+    }
+
+    .hud-prefix-question {
+        margin-top: -0.5rem;
+        margin-left: 312px;
+    }
+
+    #progressBar {
+        width: 28rem;
+        margin-left: 152px;
+    }
+
+    #hub {
+        margin-top: 40px;
+    }
+
+    #question {
+        margin-top: 220px;
+    }
+
+}
+/* Mobile */
+@media (max-width: 740px) {
+
+    .content-container{
+        background-color: white;
+    }
+
+    #content {
+        background-color: white;
+        margin-top: 4px;
+    }
+
+    .alert {
+        margin: 0 16px;
+        height: 210px;
+    }
+
+    .btnx {
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+
+    .progress{
+        width: 70%;
+        margin-top: -20px;
+        margin-left: 80px;
+    }
+
+    .de-bai{
+        margin-top: 24px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .de-bai h2 {
+        font-size: 22px;
+    }
+
+    .choice {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .btn1 {
+        width: 160px;
+        height: 192px;
+        margin: 8px;
+    }
+
+    #ftbtn {
+        width: 240px;
+        margin-left: 72px;
+        margin-top: 4px;
+    }
+
+    
+    .correct-alert {
+        height: 200px;
+        padding: 0 16px 60px!important;
+    }
+
+    .correct i {
+        display: none;
+    }
+
+    .wrong-alert {
+        height: 200px;
+        padding: 0 16px 60px!important;
+    }
+
+    .wrong i {
+        display: none;
+    }
+
+    .nextbtn {
+        right: 100px;
+        bottom: 28px;
+        width: 50%;
+    }
+
+    .hud-prefix-question {
+        text-align: bottom;
+        margin-top: -1.8rem;
+        margin-left: 160px;
+        font-size: 1.2rem;
+    }
+
+    #progressBar {
+        width: 14rem;
+        margin-top: 28px;
+        margin-left: 60px;
+    }
+
+    #question {
+        margin-top: 36px;
+    }
+
+    .score{
+        margin-left: 20px;
+    }
+
+
+}
