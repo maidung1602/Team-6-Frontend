@@ -1,6 +1,11 @@
 const pokeAPIBaseUrl = "https://pokeapi.co/api/v2/pokemon/";
 const game = document.getElementById('game');
 
+const matchingClose = document.querySelector('#quit-btn');
+const close = document.querySelector('#alrtbtn2');
+const stay = document.querySelector('#alrtbtn1');
+const alert = document.querySelector('.thong-bao-thoat');
+
 let firstPick;
 let isPaused = true;
 let matches;
@@ -42,6 +47,30 @@ const displayCard = (card) => {
     game.innerHTML = cardHTML;
 }
 
+function closeChoice()
+{
+    alert.classList.add('open');
+}
+matchingClose.addEventListener('click', closeChoice);
+
+function closeAlert()
+{
+    alert.classList.remove('open');
+    // multiple.classList.remove('open');
+}
+
+close.addEventListener('click', closeAlert);
+// xác nhận ở lại
+function stayAlert()
+{
+    alert.classList.remove('open');
+}
+stay.addEventListener('click', stayAlert);
+
+function goToEndPage() {
+    window.location.assign('../Team-6-Frontend-multipleChoice/end.html')
+}
+
 const clickCard = (e) => {
     const wordCard = e.currentTarget;
     if(wordCard.classList.contains('corrected') || isPaused) {
@@ -75,8 +104,8 @@ const clickCard = (e) => {
             firstPick.id = '';
             matches++;
             if(matches === 8) {
-                console.log("WINNER");
-            }
+                goToEndPage();
+            };
             firstPick = null;
             isPaused = false;
         }

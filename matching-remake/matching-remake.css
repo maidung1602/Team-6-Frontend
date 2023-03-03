@@ -6,7 +6,7 @@
 }
 
 #de-bai {
-    font-size: 40px;
+    font-size: calc(1.325rem + .9vw);
 }
 
 
@@ -113,3 +113,57 @@ h2 {
     from {border: 5px solid rgb(255, 50, 50); color: red; background-color: rgb(255, 180, 180);}
     to {border: 5px solid rgb(211, 211, 211);background-color: white;color: rgb(30, 30, 30);}
 }
+
+.thong-bao-thoat {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.open {
+    display: flex;
+}
+
+.alert {
+    background-color: white !important;
+    position: relative;
+    width: 532px;
+    min-height: 160px;
+    padding: 24px !important;
+    border-radius: 25px;
+  }
+  
+.alert-heading {
+    margin-bottom: 10px;
+    font-size: 25px;
+} 
+  
+  #alrtbtn1 {
+    position: absolute;
+    right: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 7px;
+  }
+  
+  #alrtbtn1:hover {
+    background-color: #e4e0e0;
+  }
+  
+  #alrtbtn2 {
+    position: absolute;
+    right: 32px;
+    border: 2px solid rgb(118, 0, 0);
+    background-color: red;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 7px;
+  }
