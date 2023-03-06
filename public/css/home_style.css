@@ -35,12 +35,13 @@ html {
 /*      Start css header   */
 
 #header {
-    height: 60px;
+    height: 56px;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1;
     background-color: white;
+    box-shadow: 0px 0px 5px rgba(156, 154, 154, 0.5);
 }
 
 #nav {
@@ -57,9 +58,9 @@ html {
 
 #nav li a {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 24px;
     text-decoration: none;
-    line-height: 60px;
+    line-height: 56px;
     color: #1c1e2e;
     font-size: 20px;
 }
@@ -69,7 +70,7 @@ html {
     display: inline-block;
     margin-right: 20px;
     margin-left: 135px;
-    padding-top: 2px;
+    margin-top: -1px;
 }
 
 #nav li a:hover {
@@ -77,13 +78,48 @@ html {
     cursor: pointer;
 }
 
-
 .user {
+    display: inline-block;
+    padding: 12px 10px;
+    height: 56px;
+}
+
+.user:hover {
+    opacity: 0.7;
+}
+
+.signin {
     position: absolute;
     right: 120px;
-    display: inline-block;
-    padding: 14px 12px;
-    height: 60px;
+    top: 0;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    margin-left: -56px;
+    background-color: #f2f2f2;
+    color: #1c1e2e !important;
+    width: 64px;
+    padding: 6px;
+    border-radius: 6px;
+}
+  
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #f2f2f2 transparent;
+}
+  
+.signin:hover .tooltiptext {
+    visibility: visible !important;
 }
 
 #this {
@@ -285,7 +321,8 @@ html {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    padding: 16px;
+    padding: 32px;
+    text-align: center;
 }
 
 #who-is-for .item i{
@@ -295,13 +332,12 @@ html {
 
 #who-is-for .item-heading {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     color: #1c1e2e;
     margin-bottom: 16px;
 }
 
 #who-is-for .item-desc {
-    padding-left: 24px;
     color: #4c527d;
 }
 
@@ -345,13 +381,13 @@ html {
 #about {
     background-color: #C50000;
     color: white;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     text-align: center;
 }
 
 #about img {
-    width: 150px;
-    margin-bottom: 48px;
+    width: 200px;
+    margin-bottom: 20px;
 }
 
 #about h2 {

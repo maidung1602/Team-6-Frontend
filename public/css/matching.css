@@ -1,0 +1,259 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+body {
+  overflow: hidden;
+}
+
+#de-bai {
+  color: #d34747;
+  font-size: 36px;
+  background-color: #c50000;
+  color: white;
+  margin: 20px 0;
+  border-radius: 20px;
+  height: 80px;
+  padding: 0 20px;
+  line-height: 80px;
+  margin-top: -10px;
+}
+.js-multiple {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+#hud-item {
+  position: absolute;
+  right: 8%;
+  top: 52px;
+  height: 96px;
+}
+
+.hud-prefix {
+  color: #d34747;
+  padding-bottom: -3rem;
+  text-align: right;
+  margin-right: 3rem;
+  font-size: 1.5rem;
+  left: 100rem;
+}
+
+.hud-prefix-question {
+  text-align: bottom;
+  margin-left: 705px;
+  font-size: 1.5rem;
+  margin-top: -2rem;
+}
+.hud-main-text {
+  color: #d34747;
+  margin-right: 4.4rem;
+  text-align: right;
+  margin-bottom: -5rem;
+}
+
+#quit-btn {
+  color: white;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+}
+
+.circle {
+  background: #c50000;
+  border: 0.01em solid #b51616;
+  border-radius: 50%;
+  box-shadow: 0.2em 0.2em 0 0 rgba(240, 4, 4, 0.125);
+  height: 2em;
+  width: 2em;
+}
+
+#quit-btn:hover {
+  opacity: 0.8;
+}
+
+.matching-header {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  letter-spacing: 2px;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+    font-size: 20px;
+  margin-bottom: 1px;
+}
+
+#game {
+  background-color: transparent;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 130px);
+  grid-template-rows: repeat(4, 130px);
+  grid-gap: 10px;
+  margin-top: -60px;
+}
+.card {
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(200, 200, 200, 0.9);
+  border-radius: 8px;
+  position: relative;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.card > .deco,
+.card > .chosen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s;
+  font-size: 14px;
+}
+
+#chosen {
+  margin: 0;
+}
+
+#chosen {
+  border: 5px solid rgb(0, 183, 255);
+  background-color: rgb(200, 255, 237);
+  color: rgb(0, 128, 255);
+}
+
+.not_chosen {
+  border: 5px solid rgb(211, 211, 211);
+}
+
+.corrected {
+  border: 5px solid rgb(211, 211, 211);
+  background-color: white;
+  opacity: 0.3;
+  animation-name: chon-dung;
+  animation-duration: 1s;
+}
+
+@keyframes chon-dung {
+  from {
+    opacity: 1;
+    color: rgb(63, 255, 53);
+    background-color: rgb(164, 255, 164);
+    border: 5px solid rgb(63, 255, 53);
+  }
+  to {
+    opacity: 0.3;
+    color: rgb(30, 30, 30);
+    background-color: white;
+    border: 5px solid rgb(211, 211, 211);
+  }
+}
+
+.wrong {
+  border: 5px solid rgb(211, 211, 211);
+  background-color: white;
+  color: rgb(30, 30, 30);
+  animation-name: chon-sai;
+  animation-duration: 1s;
+}
+
+@keyframes chon-sai {
+  from {
+    border: 5px solid rgb(255, 50, 50);
+    color: red;
+    background-color: rgb(255, 180, 180);
+  }
+  to {
+    border: 5px solid rgb(211, 211, 211);
+    background-color: white;
+    color: rgb(30, 30, 30);
+  }
+}
+
+#progressBar {
+  width: 50rem;
+  height: 1.5rem;
+  border: 0.3rem solid #e97478;
+  margin-left: 360px;
+  margin-top: -30px;
+  margin-bottom: 10px;
+}
+
+#progressBarFull {
+  height: 0.9rem;
+  background-color: #f45009;
+  width: 0%;
+}
+
+
+/* thông báo thoát */
+
+.thong-bao-thoat {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.thong-bao-thoat.open {
+  display: flex;
+}
+
+.alert {
+  background-color: white !important;
+  position: relative;
+  width: 532px;
+  min-height: 160px;
+  padding: 24px !important;
+}
+
+#alrtbtn1 {
+  position: absolute;
+  right: 100px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+#alrtbtn1:hover {
+  background-color: #e4e0e0;
+}
+
+#alrtbtn2 {
+  position: absolute;
+  right: 32px;
+  border: 2px solid rgba(11, 167, 245, 0.8);
+  background-color: rgba(11, 167, 245, 0.5);
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 8px;
+}

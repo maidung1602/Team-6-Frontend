@@ -11,12 +11,17 @@
     }
 
     .user {
+        margin-top: 2px;
         right: 60px;
     }
 
-    #banner {
-        padding-top: 80px;
-        padding-bottom: 84px;
+    #nav li a {
+        line-height: 60px;
+    }
+
+    #header {
+        height: 60px;
+        width: 100%;
     }
 
     #content img {
@@ -42,6 +47,7 @@
 
     #nav li {
         padding: 0 4px;
+        margin: 0 -7px;
     }
 
     #nav li a {
@@ -55,6 +61,12 @@
         width: 52px;
         margin-left: 12px;
         margin-right: 8px;
+    }
+
+    .signin {
+        right: 0;
+        padding: 0 8px;
+        height: 56px;
     }
 
     .user {
